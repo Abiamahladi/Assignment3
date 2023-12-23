@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.big-square {
+    background-color: #ecf0f1; /* Example background color for the entire page */
+    height: 500px; /* Full height of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-square {
+    display: flex;
+    width: 300px; /* Adjusted to 60% of the viewport width for the inner square */
+    height: 300px; /* Adjusted square shape for the inner square */
+    background-color: #ffffff; /* White background color for the inner square */
+}
+
+.left-side {
+    flex: 7; /* 70% of the available space for the left side */
+    background-color: #ffffff; /* White background color for the left side */
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: space-between; /* Equal space between the four parts */
+    align-items: stretch; /* Stretch items to full width */
+}
+
+.left-part {
+    flex: 1; /* Each part takes 1/4th of the available space */
+}
+
+.right-side {
+    flex: 3; /* 30% of the available space for the right side */
+    background-color: #3498db; /* Blue background color for the right side */
+}
